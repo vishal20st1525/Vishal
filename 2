@@ -1,0 +1,16 @@
+n, m = map(int, input().split())
+
+# Top Part
+for i in range(1, n, 2):
+    # Pattern ".|." repeats 1, 3, 5... times
+    pattern = (".|." * i).center(m, "-")
+    print(pattern)
+
+# Middle Part
+print("WELCOME".center(m, "-"))
+
+# Bottom Part
+for i in range(n-2, -1, -2):
+    # Pattern ".|." repeats in reverse order
+    pattern = (".|." * i).center(m, "-")
+    print(pattern)
