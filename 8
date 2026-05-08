@@ -1,0 +1,9 @@
+def mutate_string(string, position, character):
+    # Convert to list
+    l = list(string)
+    # Modify index
+    l[position] = character
+    # Join back to string
+    return "".join(l)
+
+if __name__ == '__main__':
